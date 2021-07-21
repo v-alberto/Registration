@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TarjetaActivity"
+    android:orientation="vertical"
+    android:background="@color/one_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:src="@drawable/tarjeta"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número de Tarjeta"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:maxLength="16"
+            android:backgroundTint="@color/two_color"/>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CCV"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:maxLength="3"
+            android:backgroundTint="@color/two_color"/>
+
+        <Button
+            android:id="@+id/btnEnviarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/four_color"
+            android:text="Enviar Pedido"
+            android:textColor="@color/one_color" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
